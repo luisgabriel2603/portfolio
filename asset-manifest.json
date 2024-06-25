@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.515fa52d.css",
-    "main.js": "/portfolio/static/js/main.d1316c3d.js",
+    "main.css": "/portfolio/static/css/main.80325372.css",
+    "main.js": "/portfolio/static/js/main.362e5614.js",
+    "static/media/portalSedam.png": "/portfolio/static/media/portalSedam.e5d28871e9dc3b121652.png",
+    "static/media/Picture.png": "/portfolio/static/media/Picture.aa8443b881289219c623.png",
+    "static/media/portalTransparencia.png": "/portfolio/static/media/portalTransparencia.9dca1851a8740879c3dc.png",
+    "static/media/large-triangles.svg": "/portfolio/static/media/large-triangles.c8bc8ea33a0cef4a8303.svg",
     "index.html": "/portfolio/index.html",
-    "main.515fa52d.css.map": "/portfolio/static/css/main.515fa52d.css.map",
-    "main.d1316c3d.js.map": "/portfolio/static/js/main.d1316c3d.js.map"
+    "main.80325372.css.map": "/portfolio/static/css/main.80325372.css.map",
+    "main.362e5614.js.map": "/portfolio/static/js/main.362e5614.js.map"
   },
   "entrypoints": [
-    "static/css/main.515fa52d.css",
-    "static/js/main.d1316c3d.js"
+    "static/css/main.80325372.css",
+    "static/js/main.362e5614.js"
   ]
 }
