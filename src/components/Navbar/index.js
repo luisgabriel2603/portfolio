@@ -30,6 +30,39 @@ const Navbar = ({ children }) => {
             };
         }
     }, []);
+    useEffect(() => {
+        const link = document.querySelector('button[id="btnSobre"]');
+        if (link) {
+
+            link.addEventListener('click', (event) => scrollToSection(event, 'sobre'));
+
+            return () => {
+                link.removeEventListener('click', (event) => scrollToSection(event, 'sobre'));
+            };
+        }
+    }, []);
+    useEffect(() => {
+        const link = document.querySelector('button[id="btnExperiencias"]');
+        if (link) {
+
+            link.addEventListener('click', (event) => scrollToSection(event, 'experiencias'));
+
+            return () => {
+                link.removeEventListener('click', (event) => scrollToSection(event, 'experiencias'));
+            };
+        }
+    }, []);
+    useEffect(() => {
+        const link = document.querySelector('button[id="btnProjetos"]');
+        if (link) {
+
+            link.addEventListener('click', (event) => scrollToSection(event, 'projetos'));
+
+            return () => {
+                link.removeEventListener('click', (event) => scrollToSection(event, 'projetos'));
+            };
+        }
+    }, []);
     return (
         <>
             <nav className={`max-sm:fixed z-50 border-gray-200 border bg-slate-200 h-18 w-full text-slate-700 shadow-slate-300 shadow py-2`}>
@@ -64,18 +97,18 @@ const Navbar = ({ children }) => {
                                 </button>
                             </li>
                             <li>
-                                <button type="button" id="btnHome" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
+                                <button type="button" id="btnSobre" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
                                     Sobre
                                 </button>
                             </li>
                             <li>
-                                <button type="button" id="btnHome" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
+                                <button type="button" id="btnExperiencias" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
                                     Experiências
                                 </button>
                             </li>
                             <li className="justify-between flex ">
-                                <button type="button" id="btnHome" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
-                                    Produto
+                                <button type="button" id="btnProjetos" classNameName=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 px-5 py-2">
+                                    Projetos
                                 </button>
                                 <div className="flex gap-3 sm:hidden ">
                                     <a href="https://www.instagram.com/luisgabriel_cm" target="_blank" rel="noreferrer" className=" font-medium hover:text-slate-950 rounded-full hover:bg-slate-200/50 ">
